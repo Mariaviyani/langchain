@@ -33,7 +33,7 @@ if st.button("Get Recommendations"):
         try:
             chat_completion = client.chat.completions.create(
                 messages=messages,
-                model="llama3-8b-8192"  # Replace with the desired model
+                model="llama-3.1-8b-instant"  # Replace with the desired model
             )
 
             recommendations = chat_completion.choices[0].message.content
